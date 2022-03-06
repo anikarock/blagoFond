@@ -1,0 +1,275 @@
+@charset "UTF-8";
+@media (max-width: 1300px) {
+  .container {
+    max-width: 970px;
+  }
+
+  section {
+    max-height: 4000px;
+  }
+}
+@media (max-width: 972px) {
+  section {
+    min-height: 3800px;
+  }
+
+  .container {
+    max-width: 750px;
+  }
+
+  #eee img {
+    max-width: 500px;
+    max-height: 200px;
+  }
+
+  #qqq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #www div {
+    min-width: 50%;
+  }
+  #www div img {
+    max-width: 100px;
+    max-height: 50px;
+  }
+}
+@media (max-width: 752px) {
+  .container {
+    max-width: none;
+  }
+
+  section {
+    min-height: 5500px;
+  }
+
+  #www div {
+    min-width: 100%;
+  }
+  #www div img {
+    max-width: 100px;
+    max-height: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: none;
+  }
+
+  section {
+    min-height: 7000px;
+  }
+
+  header {
+    min-height: 900px;
+  }
+
+  li {
+    min-width: 100%;
+  }
+
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.container {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+header {
+  background :#467e59;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 400px;
+}
+header li {
+  list-style: none;
+  display: inline-block;
+}
+header li a {
+  font-family: "PT Serif Caption", serif;
+  color: black;
+  font-size: 18px;
+  border: solid 1px #f7f1a2;
+  background-color: #e9e994;
+  border-radius: 7px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+header li a:hover {
+  background-color: #93f167;
+  border: #8df15e solid 2px;
+}
+header h1 {
+  font-family: "PT Serif Caption", serif;
+  color: #f1de71;
+  font-size: 30px;
+  font-family: "Balsamiq Sans", cursive;
+  margin-top: 100px;
+}
+header .naz {
+  margin-top: auto;
+  font-family: "Marck Script", cursive;
+  font-size: 70px;
+}
+
+section {
+  background-image: url(./IMG/unnamed.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 3000px;
+}
+section h3 {
+  font-family: "PT Serif Caption", serif;
+  color: #232225;
+  font-size: 40px;
+  text-align: center;
+}
+section p {
+  font-family: "PT Serif Caption", serif;
+  color: #232225;
+  font-size: 17px;
+  text-indent: 30px;
+  line-height: 25px;
+}
+section img {
+  height: 400px;
+  width: 100%;
+}
+section h4 {
+  font-family: "PT Serif Caption", serif;
+  color: #232225;
+  font-size: 20px;
+  margin-left: 50px;
+}
+section #qqq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section #qqq .one {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+section #qqq .two {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 4px double #dfd555;
+  padding: 0 20px;
+  height: 570px;
+}
+section #qqq p {
+  margin: 35px;
+}
+section label {
+  font-family: "PT Serif Caption", serif;
+  color: #25202e;
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+}
+section input:not(#soglasie, .knop) {
+  width: 250px;
+  height: 20px;
+  -webkit-box-shadow: #8df15e 4px 6px 7px;
+          box-shadow: #8df15e 4px 6px 7px;
+  background: #f7f1a2;
+}
+section select {
+  width: 250px;
+  height: 20px;
+  -webkit-box-shadow: #8df15e 4px 6px 7px;
+          box-shadow: #8df15e 4px 6px 7px;
+  background: #f7f1a2;
+}
+section .knop {
+  border: solid 1px #f7f1a2;
+  background-color: #e9e994;
+  border-radius: 7px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-family: "PT Serif Caption", serif;
+  color: #25202e;
+  font-size: 18px;
+}
+section .knop:hover {
+  background-color: #93f167;
+  border: #8df15e solid 2px;
+}
+section #www {
+  float: left;
+  width: 100%;
+}
+section #www > div {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+section #www img {
+  max-width: 300px;
+  max-height: 200px;
+}
+section #www p {
+  font-family: "PT Serif Caption", serif;
+  color: #232225;
+  font-size: 17px;
+  text-indent: 30px;
+  line-height: 25px;
+  clear: left;
+}
+
+footer {
+  font-family: "PT Serif Caption", serif;
+  color: white;
+  font-size: 14px;
+  clear: both;
+  background:#25202e;
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer img {
+  width: 50px;
+  height: 50px;
+}
+footer #o {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+footer #t {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+footer #f {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+footer a {
+  color: white;
+}

@@ -1,0 +1,129 @@
+@import"dop";
+
+.container{
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+header{
+    @include fon(url(/IMG/FAp4SpZleC0.jpg),no-repeat,400px);
+    li{
+        list-style: none;
+        display: inline-block;
+        a{
+            @include name (18px, rgb(0, 0, 0));
+            @include aaa}
+    }
+   
+
+    h1{
+        @include name (30px, rgb(241, 222, 113));
+        font-family: 'Balsamiq Sans', cursive;
+        margin-top: 100px;
+    }
+
+    .naz{
+        margin-top: auto;
+        font-family: 'Marck Script', cursive;
+        font-size: 70px;
+    }
+}
+section{
+    @include fon (url(/IMG/unnamed.jpg),repeat,3000px);
+    
+    h3{
+     @include name (40px, rgb(35, 34, 37));
+     text-align: center;
+    }
+    p{
+    @include name (17px, rgb(35, 34, 37));
+    text-indent: 30px;
+    line-height: 25px;
+    }
+    img{
+        height: 400px;
+        width: 100%;
+    }
+    h4{
+        @include name (20px, rgb(35, 34, 37));
+        margin-left: 50px;
+    }
+    #qqq{
+        display: flex;
+        
+        .one{
+            flex: 3;
+        }
+        .two{
+            flex: 1;
+            border: 4px double rgb(223, 213, 85) ;
+            padding: 0 20px;
+            height: 570px;
+        }
+        p{
+            margin: 35px;
+        }
+    }
+    label{
+        @include name (20px, rgb(37, 32, 46));
+        line-height: 40px;
+        display: block;
+    }
+    input:not(#soglasie, .knop){
+        @include veb;
+    }
+    select{
+        @include veb;
+    }
+    .knop{
+        @include aaa;
+        @include name (18px, rgb(37, 32, 46));
+
+
+    } 
+    #www{ 
+        float: left;
+        width: 100%;   
+        >div{
+        //@include img(4, 2%);//
+        float:left;
+        width: (100%/4);
+        text-align: center;
+        }
+    
+        img{
+            max-width: 300px;
+            max-height: 200px;
+        }
+        p{
+            @include name (17px, rgb(35, 34, 37));
+            text-indent: 30px;
+            line-height: 25px; 
+            clear:left;
+        }
+        }
+     
+}
+footer{
+    @include name(14px, rgb(255, 255, 255));
+    clear: both;
+    background-image:url(/IMG/фон.jpg);
+   
+    padding-top: 60px;
+    img{
+        width: 50px ;
+        height: 50px;
+    }
+    display: flex;
+    #o{flex: 2;}
+    #t{flex: 2;}
+    #f{flex: 1;}
+    a{
+        color: white;
+    }
+    
+}
+
+
+    

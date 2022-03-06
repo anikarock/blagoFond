@@ -1,0 +1,106 @@
+@media (max-width: 1300px) {
+    .container{
+        max-width:970px;}
+    section{
+        max-height: 4000px;   
+        } 
+    }
+    @media (max-width: 972px) {
+    section{
+        min-height: 3800px;   
+        } 
+    .container{
+        max-width: 750px;}
+    #eee{
+        img{
+            max-width: 500px;
+            max-height: 200px;   
+        }
+    }
+    #qqq{
+        flex-direction: column;
+    }
+    #www div{
+        min-width: 50%;
+        img{
+        max-width: 100px;
+        max-height: 50px;
+    }
+    }
+}
+@media (max-width: 752px) {
+    .container{
+        max-width: none;}
+    section{
+            min-height: 5500px;   
+            } 
+    #www div{
+    min-width: 100%;
+    img{
+    max-width: 100px;
+    max-height: 50px;
+            }
+            }
+}
+@media (max-width: 500px) {
+    .container{
+        max-width: none;}
+    section{
+            min-height: 7000px;   
+            } 
+    header{
+        min-height: 900px;
+    }
+    
+    li{
+        min-width: 100%;
+    }
+    footer{          
+          flex-direction: column;
+    
+    }
+}    
+@mixin name ($size, $color) {
+    font-family: 'PT Serif Caption', serif;
+    color: $color;
+    font-size: $size;
+}
+@mixin fon ($url,$rp,$hh){
+    background-image: $url;
+    background-repeat: $rp;
+    background-position: center;
+    background-attachment: fixed;   
+    height:$hh;
+}
+@mixin aaa {
+    border: solid 1px rgb(247, 241, 162);
+    background-color: rgb(233, 233, 148);
+    border-radius: 7px;
+    transition-duration: 1s;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    &:hover{
+        background-color: rgb(147, 241, 103);
+        border: rgb(141, 241, 94) solid 2px;
+    }
+}
+@mixin veb {
+    width: 250px;
+    height: 20px;
+    box-shadow: rgb(141, 241, 94) 4px 6px 7px;
+    background: rgb(247, 241, 162);  
+}
+//@mixin img ($cols, $margin){
+    //float:left;
+    //height: 300px;
+    //margin-right: $margin;
+    //margin-bottom: $margin;
+   // width: ((100% - (($cols - 1) * $margin)) / $cols) ;  
+  //  &:nth-child(#{$cols}n){
+  //      margin-right: 0%;
+   // }}
+    
+
